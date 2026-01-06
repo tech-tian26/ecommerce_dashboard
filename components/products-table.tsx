@@ -79,7 +79,7 @@ export function ProductsTable({ products }: ProductsTableProps) {
               <TableCell className="font-medium">{product.name}</TableCell>
               <TableCell className="font-mono text-sm">{product.sku}</TableCell>
               <TableCell>{product.category}</TableCell>
-              <TableCell>${product.price.toFixed(2)}</TableCell>
+              <TableCell>₹{product.price.toFixed(2)}</TableCell>
               <TableCell>
                 <span className={product.stock === 0 ? "text-destructive font-medium" : ""}>{product.stock}</span>
               </TableCell>

@@ -11,13 +11,13 @@ interface CategoryChartProps {
 }
 
 const COLORS = [
-  "hsl(var(--chart-1))",
-  "hsl(var(--chart-2))",
-  "hsl(var(--chart-3))",
-  "hsl(var(--chart-4))",
-  "hsl(var(--chart-5))",
-]
-
+  "#ef4444",
+  "#f97316",
+  "#eab308",
+  "#22c55e",
+  "#3b82f6",
+  "#8b5cf6",
+];
 export function CategoryChart({ data }: CategoryChartProps) {
   const chartData = data.map((item) => ({
     name: item.category,

@@ -1,7 +1,7 @@
 import { getDatabase } from "@/lib/mongodb"
 import type { Product } from "@/lib/types"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Package, TrendingUp, AlertCircle, DollarSign } from "lucide-react"
+import { Package, TrendingUp, AlertCircle, IndianRupee } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
@@ -47,8 +47,8 @@ export default async function DashboardPage() {
     },
     {
       title: "Total Revenue",
-      value: `$${stats.totalRevenue.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
-      icon: DollarSign,
+      value: `₹${stats.totalRevenue.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
+      icon: IndianRupee,
       description: "From all sales",
     },
     {
