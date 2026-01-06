@@ -169,19 +169,6 @@ Open [http://localhost:3000](http://localhost:3000) to access the application.
 
 - `POST /api/upload` - Upload image to Cloudinary
 
-## Deployment
-
-### Deploy to Vercel
-
-1. Push your code to a Git repository
-2. Import the project in Vercel
-3. Add environment variables in Vercel project settings
-4. Deploy
-
-### Environment Variables for Production
-
-Ensure all environment variables from `.env.local` are added to your Vercel project settings.
-
 ## Development Workflow
 
 1. **Database Changes**: Update MongoDB collections and run migration scripts
